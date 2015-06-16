@@ -28,11 +28,7 @@ namespace InterviewPreps
                 res += this.p1;
             }
 
-            if (this.p2 < 0)
-            {
-                res = 0 - res;
-            }
-
+            res = (this.p2 < 0) ? 0 - res : res;
             return res;
         }
     }

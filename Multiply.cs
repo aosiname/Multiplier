@@ -21,6 +21,7 @@ namespace InterviewPreps
             }
 
             int res = this.p1;
+            // dont like the fact that I am checking for the same thing here
             int max = (this.p2 < 0) ? 0 - this.p2 : this.p2;
 
             for (int i = 1; i < max; i++)
@@ -28,6 +29,7 @@ namespace InterviewPreps
                 res += this.p1;
             }
 
+            // and here...
             res = (this.p2 < 0) ? 0 - res : res;
             return res;
         }
